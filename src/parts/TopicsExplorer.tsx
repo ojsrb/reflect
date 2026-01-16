@@ -241,6 +241,7 @@ export const TopicsExplorer = ({ className, behavior = "default", value, onChang
         <div className="flex flex-1 items-center focus-within:ring-1 focus-within:ring-ring focus-within:ring-inset">
           <Search className="ml-2 size-4 shrink-0 text-accent-foreground/50" />
           <Input
+            aria-label="Search"
             embedded
             placeholder="Search&hellip;"
             className="w-full flex-1 pl-2 focus-visible:ring-0"
@@ -250,7 +251,7 @@ export const TopicsExplorer = ({ className, behavior = "default", value, onChang
         </div>
         {suppliers.length > 0 && (
           <Select
-            value={supplierId}
+            value={supplierId ?? ""}
             onValueChange={setSupplierId}
             disabled={supplierId != null && suppliers.length === 1}>
             <SelectTrigger
