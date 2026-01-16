@@ -63,6 +63,8 @@ export type WidgetDescriptor<P = unknown> = Readonly<{
       json?: ReadonlyArray<string>;
       composite?: ReadonlyArray<string>;
     };
+    /** Default channel binding */
+    defaultChannel?: string;
   }>;
   /** Custom properties specification */
   props?: Readonly<{

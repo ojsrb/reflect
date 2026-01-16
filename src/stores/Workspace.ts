@@ -334,6 +334,7 @@ export const useWorkspaceStore = create(
               lookback: descriptor.slot?.lookback,
               props: descriptor.props?.defaultValue,
               descriptor: castDraft(descriptor),
+              slot: descriptor.slot?.defaultChannel,
             };
           }
         }),

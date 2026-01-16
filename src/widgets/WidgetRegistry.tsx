@@ -3,6 +3,7 @@ import { WidgetChartLineDescriptor } from "./WidgetChartLine";
 import { WidgetChooserDescriptor } from "./WidgetChooser";
 import { WidgetColorDescriptor } from "./WidgetColor";
 import { WidgetField2dDescriptor } from "./WidgetField2d";
+import { WidgetFMS } from "./WidgetFMS";
 import { WidgetGyroDescriptor } from "./WidgetGyro";
 import { WidgetPowerPdhDescriptor, WidgetPowerPdpDescriptor } from "./WidgetPowerDistribution";
 import { WidgetReefAlgaeDescriptor } from "./WidgetReefAlgae";
@@ -21,6 +22,7 @@ export const WidgetRegistry: Record<WidgetType, WidgetDescriptor> = [
   WidgetChooserDescriptor,
   WidgetSliderDescriptor,
   WidgetField2dDescriptor,
+  WidgetFMS,
   WidgetChartLineDescriptor,
   WidgetPowerPdhDescriptor,
   WidgetPowerPdpDescriptor,
