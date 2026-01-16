@@ -1,6 +1,7 @@
 import { WidgetCameraDescriptor } from "./WidgetCamera";
 import { WidgetChartLineDescriptor } from "./WidgetChartLine";
 import { WidgetChooserDescriptor } from "./WidgetChooser";
+import { WidgetColorDescriptor } from "./WidgetColor";
 import { WidgetField2dDescriptor } from "./WidgetField2d";
 import { WidgetGyroDescriptor } from "./WidgetGyro";
 import { WidgetPowerPdhDescriptor, WidgetPowerPdpDescriptor } from "./WidgetPowerDistribution";
@@ -14,6 +15,7 @@ import type { WidgetDescriptor } from "./types";
 
 export const WidgetRegistry: Record<WidgetType, WidgetDescriptor> = [
   WidgetValueDescriptor,
+  WidgetColorDescriptor,
   WidgetToggleDescriptor,
   WidgetChooserDescriptor,
   WidgetField2dDescriptor,
