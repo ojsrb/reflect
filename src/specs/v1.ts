@@ -5,6 +5,7 @@ export const VERSION = 1;
 export const WidgetTypeValues = [
   "toggle",
   "chooser",
+  "slider",
   "gyro",
   "power.pdp",
   "power.pdh",
