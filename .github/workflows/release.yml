@@ -163,6 +163,7 @@ jobs:
 
     steps:
       - name: Read version
+        id: version
         run: |
           TAG=${{ github.ref_name }}
           echo "VERSION=${TAG#v}" >> $GITHUB_ENV
@@ -235,7 +236,7 @@ jobs:
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
-          name: Reflect ${{ VERSION }}
+          name: Reflect ${{ steps.version.outputs.VERSION }}
           tag: ${{ github.ref_name }}
           artifacts: "artifacts/*"
           draft: true
