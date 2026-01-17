@@ -64,8 +64,10 @@ jobs:
 
       - name: Install Linux dependencies
         if: matrix.artifact-name == 'linux-x64'
+        # see https://github.com/tauri-apps/tauri/issues/11149
         # see https://v2.tauri.app/start/prerequisites/#linux
         run: |
+          echo "NO_STRIP=1" >> $GITHUB_ENV
           sudo apt-get update -q
           sudo apt-get install -y \
             libwebkit2gtk-4.1-dev \
@@ -236,7 +238,7 @@ jobs:
       - name: Create release
         uses: ncipollo/release-action@v1
         with:
-          name: Reflect ${{ steps.version.outputs.VERSION }}
+          name: Reflect ${{ github.ref_name }}
           tag: ${{ github.ref_name }}
           artifacts: "artifacts/*"
           draft: true
