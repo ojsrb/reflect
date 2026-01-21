@@ -45,7 +45,7 @@ export const Tree = <T,>({ data, renderNode, metadata, onSelectionChange, select
   );
 
   return (
-    <ScrollArea className={cn("flex-1 overflow-hidden", className)}>
+    <ScrollArea className={cn("flex-1", className)}>
       <div className="relative">
         <TreeItem<T>
           data={data}

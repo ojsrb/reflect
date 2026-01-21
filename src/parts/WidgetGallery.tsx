@@ -84,7 +84,7 @@ export const WidgetGallery = () => {
   }, [season]);
 
   return (
-    <ScrollArea className="overflow-hidden">
+    <ScrollArea>
       <div className="flex w-full flex-col gap-3 p-3">
         {items.evergreen}
         {items.seasoned.map(([season, items]) => (

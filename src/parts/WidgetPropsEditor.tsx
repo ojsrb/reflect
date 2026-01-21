@@ -31,7 +31,7 @@ const WidgetPropsEditorPanel = ({ disabled, widgetId }: ModalProps & WidgetProps
       <div className="flex flex-col gap-1 border-b bg-secondary/20 px-4 py-4 select-none">
         <p className="flex gap-2 text-sm text-muted-foreground">{descriptor.description}</p>
       </div>
-      <ScrollArea className="flex-1 overflow-hidden">
+      <ScrollArea className="flex-1">
         <EditorBlock
           label={
             <div className="flex items-center justify-between">

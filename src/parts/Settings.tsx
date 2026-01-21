@@ -92,7 +92,7 @@ const SettingsPanel = ({ disabled }: ModalProps) => {
         />
         <h1 className="text-lg font-semibold text-secondary-foreground/80 select-none">Settings</h1>
       </div>
-      <ScrollArea className="flex-1 overflow-hidden">
+      <ScrollArea className="flex-1">
         <div className="flex flex-col gap-4 pb-4">
           <div className="flex flex-col gap-1 border-b bg-secondary/20 px-4 py-4 select-none">
             <h2 className="text-lg font-medium">Connectivity</h2>
