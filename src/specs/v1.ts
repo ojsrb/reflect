@@ -16,6 +16,7 @@ export const WidgetTypeValues = [
   "value",
   "camera",
   "fms",
+  "match.time",
   "alerts",
   "swerve",
   "2025.reef.coral",

@@ -6,6 +6,7 @@ import { WidgetColorDescriptor } from "./WidgetColor";
 import { WidgetField2dDescriptor } from "./WidgetField2d";
 import { WidgetFMSDescriptor } from "./WidgetFMS";
 import { WidgetGyroDescriptor } from "./WidgetGyro";
+import { WidgetMatchTimeDescriptor } from "./WidgetMatchTime";
 import { WidgetPowerPdhDescriptor, WidgetPowerPdpDescriptor } from "./WidgetPowerDistribution";
 import { WidgetReefAlgaeDescriptor } from "./WidgetReefAlgae";
 import { WidgetReefCoralDescriptor } from "./WidgetReefCoral";
@@ -25,6 +26,7 @@ export const WidgetRegistry: Record<WidgetType, WidgetDescriptor> = [
   WidgetSliderDescriptor,
   WidgetField2dDescriptor,
   WidgetFMSDescriptor,
+  WidgetMatchTimeDescriptor,
   WidgetAlertsDescriptor,
   WidgetChartLineDescriptor,
   WidgetPowerPdhDescriptor,
